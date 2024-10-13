@@ -1,0 +1,363 @@
+*,
+*::before,
+*::after{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    width: 100%;
+}
+.back-md{
+    
+    height: 480px;
+    width: 100%;
+  background-color:#000000;
+    position: sticky;
+    background-image: url(image/track_move1.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    transition: 2s;
+   position: relative;
+   z-index: 7;
+    
+    animation-name: animate;
+    animation-direction: alternate-reverse;
+    animation-duration: 15s;
+    animation-fill-mode: forwards;
+    animation-iteration-count: infinite;
+    animation-play-state: running;
+    animation-timing-function: ease-in-out;
+ 
+}
+
+@keyframes animate{
+    0%{
+        background-image: url(image/track_move2.jpg);
+    }20%{
+        background-image: url(image/track_move3.webp);
+    }
+   
+}
+
+/* transport */
+
+.hed{
+    margin-top: 5rem;
+    /* max-height: 200px; */
+}
+.frd .track_ve img{
+    margin-left: 3rem;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.sec .track_cont{
+margin-top: 2rem;
+}
+.sec .track_cont h1,p{
+    text-align: center;
+}
+.sec .track_cont p{
+    padding-top: 1rem;
+}
+/* -------*/
+.hed1{
+       margin-top: 5rem;
+       background-color: #f0c9f5;
+}
+.frd1 .track_ve img{
+    margin-left: 3rem;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.sec1 .track_cont{
+margin-top: 5rem;
+}
+.sec1 .track_cont h1,p{
+    text-align: center;
+}
+.sec1 .track_cont p{
+    padding-top: 1rem;
+} 
+/* --------- */
+
+.hed2{
+    margin-top: 5rem;
+}
+.frd2 .track_ve img{
+    margin-left: 3rem;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.sec2 .track_cont{
+margin-top: 2rem;
+}
+.sec2 .track_cont h1,p{
+    text-align: center;
+}
+.sec2 .track_cont p{
+    padding-top: 1rem;
+}
+/* --------- */
+.hed3{
+    margin-top: 5rem;
+    background-color: rgb(252, 216, 150);
+    }
+.frd3 .track_ve img{
+    margin-left: 4rem;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    /* clip-path: polygon(50% 0,0 100%,100% 100%); */
+}
+.sec3 .track_cont{
+margin-top: 2rem;
+position: relative;
+}
+.sec3 .track_cont h1,p{
+    text-align: center;
+    
+}
+.sec3 .track_cont p{
+    padding-top: 1rem;
+    font-weight: 800px;
+}
+/* -------- */
+.track_card{
+    margin-top: 10rem;
+    width: 100%;
+    background-color: #acc0c4;
+}
+.track_card .card img{
+    width: 80px;
+    display: flex;
+   margin-left: 6rem;
+   padding: 10px;
+}
+.card-body h1{
+ text-align: center;
+}
+.card{
+    margin-left: 4px;
+    margin-top: 4px;
+    margin-right: 4px;
+}
+
+
+/* media queries */
+@media screen and (min-width: 321px) and (max-width: 425px){
+    .frd .track_ve img{
+        margin-left: 6rem;
+    }
+    .frd1 .track_ve img{
+        margin-left: 6rem;
+    }
+    .frd2 .track_ve img{
+        margin-left: 6rem;
+    }
+    .frd3 .track_ve img{
+        margin-left: 6rem;
+    }
+    .track_card .card img{
+        margin-left: 10rem;
+    }
+}
+@media screen and (min-width: 426px) and (max-width: 768px){
+    .frd .track_ve img:hover {
+     transform: translateX(170px);
+     transition: 4s;   
+    }
+    .frd1 .track_ve img:hover {
+        transform: translatex(170px);
+        transition: 4s;   
+    }
+    .frd2 .track_ve img:hover {
+        transform: translateX(180px);
+        transition: 4s;   
+    }
+    .frd3 .track_ve img:hover {
+        transform: translateX(170px);
+        transition: 4s;   
+    }
+    .track_card .card img{
+        margin-left: 20rem;
+    }
+    .hed1{
+        background-color: #a998ac;
+    }
+    .hed3{
+        background-color: #ebae5fd0;
+    }
+
+}
+@media screen and (min-width: 769px) and (max-width: 1024px){
+    .frd .track_ve img{
+        margin-left: 6rem;
+        width: 80%;
+    }
+    .frd1 .track_ve img{
+        margin-left: 6rem;
+        width: 80%;
+        margin-top: 3rem;
+    }
+    .frd2 .track_ve img{
+        margin-left: 6rem;
+        margin-top: 3rem;
+        width: 80%;
+    }
+   
+}
+@media screen and (min-width: 1025px) and (max-width: 1366px){
+    .frd .track_ve img{
+        margin-left: 6rem;
+        width: 85%;
+    }
+    .frd1 .track_ve img{
+        margin-left: 5rem;
+        width: 85%;
+        margin-top: 3rem;
+    }
+    .frd2 .track_ve img{
+        margin-left: 6rem;
+        margin-top: 3rem;
+        width: 85%;
+    }
+    .card{
+        height: 200px;
+    }
+    .track_card .card img{
+        width: 80px;
+        margin-left: 8rem;
+    }
+    .card-body h1{
+        text-align: center;
+        font-size: 24px;
+       }
+}
+@media screen and (min-width: 1367px) and (max-width: 1440px){
+    .hed{
+        margin-top: 3rem;
+        width: 100%;
+        height: 40vh;
+    }
+    .frd .track_ve img{
+        margin-left: 3rem;
+        width: 90%;
+        height: 300px;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+    .sec .track_cont{
+    margin-top: 2rem;
+    }
+    .sec .track_cont h1{
+        font-size: 36px;
+        font-weight: bold;
+    }
+    .sec .track_cont p{
+        padding-top: 1rem;
+        font-size: 20px;
+        font-weight: 900px;
+        font-style:initial;
+    }
+    .hed1{
+        margin-top: 3rem;
+        width: 100%;
+        height: 40vh;
+    }
+    .frd1 .track_ve img{
+        margin-left: 3rem;
+        margin-top: 5rem;
+        width: 90%;
+        height: 300px;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+    .sec1 .track_cont{
+    margin-top: 5rem;
+    }
+    .sec1 .track_cont h1{
+        font-size: 36px;
+        font-weight: bold;
+    }
+    .sec1 .track_cont p{
+        padding-top: 1rem;
+        font-size: 20px;
+        font-weight: 900px;
+        font-style:initial;
+    }
+    .hed2{
+        margin-top: 7rem;
+        width: 100%;
+        height: 40vh;
+    }
+    .frd2 .track_ve img{
+        margin-left: 3rem;
+        width: 90%;
+        height: 300px;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+    .sec2 .track_cont{
+    margin-top: 2rem;
+    }
+    .sec2 .track_cont h1{
+        font-size: 36px;
+        font-weight: bold;
+    }
+    .sec2 .track_cont p{
+        padding-top: 1rem;
+        font-size: 20px;
+        font-weight: 900px;
+        font-style:initial;
+    }
+    .hed3{
+        margin-top: 3rem;
+        width: 100%;
+        height: 40vh;
+    }
+    .frd3 .track_ve img{
+        margin-left: 3rem;
+        width: 80%;
+        height: 400px;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+    .sec3 .track_cont{
+    margin-top: 6rem;
+    }
+    .sec3 .track_cont h1{
+        font-size: 36px;
+        font-weight: bold;
+    }
+    .sec3 .track_cont p{
+        padding-top: 1rem;
+        font-size: 20px;
+        font-weight: 900px;
+        font-style:initial;
+    }
+    .card{
+        height: 200px;
+    }
+    .track_card .card img{
+        width: 80px;
+        margin-left: 10rem;
+    }
+    .card-body h1{
+        text-align: center;
+        font-size: 34px;
+    }
+    .card-body p{
+        font-size: 20px;
+        font-weight: 800;
+        font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    }
+}
